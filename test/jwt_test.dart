@@ -6,8 +6,8 @@ import 'package:test/test.dart';
 
 void main() {
   group('$JWT', () {
-    DateTime now;
-    JWTBuilder builder;
+    late DateTime now;
+    late JWTBuilder builder;
 
     setUp(() {
       now = DateTime.now();

@@ -5,7 +5,7 @@ import 'package:test/test.dart';
 
 void main() {
   group('RS256: ', () {
-    JWTRsaSha256Signer signer;
+    late JWTRsaSha256Signer signer;
     setUp(() {
       final priv = File('test/resources/private.pem').readAsStringSync();
       final pub = File('test/resources/public.pem').readAsStringSync();
